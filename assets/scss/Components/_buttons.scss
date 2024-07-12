@@ -1,0 +1,35 @@
+@use "../Base/mixins";
+.btn {
+  padding: 15px 50px;
+  background-color: #dfaa5b;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: "Ubuntu", sans-serif;
+  text-wrap: nowrap;
+  @include mixins.responsive-font(10px, 15px, 20px, 25px);
+  @media screen and (max-width: 768px) {
+    padding: 10px 40px;
+  }
+  @media screen and (max-width: 600px) {
+    padding: 8px 10px;
+  }
+  &.large {
+    padding: 15px 75px;
+    @media screen and (max-width: 768px) {
+      padding: 10px 40px;
+    }
+  }
+}
+
+button {
+  padding: 15px 75px;
+  background-color: #dfaa5b;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  @media screen and (max-width: 768px) {
+    padding: 10px 40px;
+  }
+}

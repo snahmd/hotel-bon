@@ -1,0 +1,12 @@
+@use "Modules/header";
+@use "Base/mixins";
+@use "Modules/hero";
+@use "Modules/facilities";
+@use "Modules/rooms";
+@use "Modules/book";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

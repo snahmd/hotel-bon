@@ -1,3 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+header {
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+header .logo {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+header nav {
+  margin-bottom: 4rem;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+}
+header nav ul li {
+  font-size: 1.5rem;
+  font-size: 0.8rem;
+  color: black;
+  list-style: none;
+}
+@media (min-width: 768px) {
+  header nav ul li {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 992px) {
+  header nav ul li {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1200px) {
+  header nav ul li {
+    font-size: 1.5rem;
+  }
+}
+header nav ul li a {
+  font-family: "Ubuntu", sans-serif;
+  text-decoration: none;
+  color: #957554;
+}
+header nav ul i {
+  font-size: 1rem;
+  font-size: 0.7rem;
+  color: #957554;
+}
+@media (min-width: 768px) {
+  header nav ul i {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 992px) {
+  header nav ul i {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 1200px) {
+  header nav ul i {
+    font-size: 1rem;
+  }
+}
 
+.btn {
+  padding: 15px 50px;
+  background-color: #dfaa5b;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: "Ubuntu", sans-serif;
+  text-wrap: nowrap;
+  font-size: 10px;
+}
+@media (min-width: 768px) {
+  .btn {
+    font-size: 15px;
+  }
+}
+@media (min-width: 992px) {
+  .btn {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .btn {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .btn {
+    padding: 10px 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .btn {
+    padding: 8px 10px;
+  }
+}
+.btn.large {
+  padding: 15px 75px;
+}
+@media screen and (max-width: 768px) {
+  .btn.large {
+    padding: 10px 40px;
+  }
+}
+
+button {
+  padding: 15px 75px;
+  background-color: #dfaa5b;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+}
+@media screen and (max-width: 768px) {
+  button {
+    padding: 10px 40px;
+  }
+}
+
+.hero {
+  position: relative;
+}
+.hero img {
+  width: 100%;
+  height: auto;
+}
+.hero .hero_info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+}
+.hero .hero_info h1 {
+  font-size: 30px;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .hero .hero_info h1 {
+    font-size: 40px;
+  }
+}
+@media (min-width: 992px) {
+  .hero .hero_info h1 {
+    font-size: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero .hero_info h1 {
+    font-size: 80px;
+  }
+}
+.hero .hero_info h3 {
+  font-size: 18px;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .hero .hero_info h3 {
+    font-size: 24px;
+  }
+}
+@media (min-width: 992px) {
+  .hero .hero_info h3 {
+    font-size: 32px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero .hero_info h3 {
+    font-size: 40px;
+  }
+}
+
+.facilities h2 {
+  color: #957554;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  font-size: 30px;
+}
+@media (min-width: 768px) {
+  .facilities h2 {
+    font-size: 35px;
+  }
+}
+@media (min-width: 992px) {
+  .facilities h2 {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .facilities h2 {
+    font-size: 45px;
+  }
+}
+.facilities .f_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+.facilities .f_container h4 {
+  color: #957554;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  font-size: 18px;
+}
+@media (min-width: 768px) {
+  .facilities .f_container h4 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .facilities .f_container h4 {
+    font-size: 22px;
+  }
+}
+@media (min-width: 1200px) {
+  .facilities .f_container h4 {
+    font-size: 24px;
+  }
+}
+
+.rooms h2 {
+  color: #957554;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  font-size: 30px;
+}
+@media (min-width: 768px) {
+  .rooms h2 {
+    font-size: 35px;
+  }
+}
+@media (min-width: 992px) {
+  .rooms h2 {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .rooms h2 {
+    font-size: 45px;
+  }
+}
+.rooms .container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.rooms .container .card {
+  position: relative;
+  width: 40%;
+}
+.rooms .container .card img {
+  width: 100%;
+  height: auto;
+}
+.rooms .container .card h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-wrap: nowrap;
+  font-size: 15px;
+}
+@media (min-width: 768px) {
+  .rooms .container .card h3 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .rooms .container .card h3 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .rooms .container .card h3 {
+    font-size: 40px;
+  }
+}
+.rooms .container .card a {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.book_now {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.book_now h2 {
+  color: #957554;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 30px;
+}
+@media (min-width: 768px) {
+  .book_now h2 {
+    font-size: 35px;
+  }
+}
+@media (min-width: 992px) {
+  .book_now h2 {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .book_now h2 {
+    font-size: 45px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 /*# sourceMappingURL=style.css.map */

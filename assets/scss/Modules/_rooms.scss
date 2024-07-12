@@ -1,0 +1,44 @@
+@use "../Base/mixins";
+
+.rooms {
+  h2 {
+    color: #957554;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    @include mixins.responsive-font(30px, 35px, 40px, 45px);
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    .card {
+      position: relative;
+      width: 40%;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+      h3 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-wrap: nowrap;
+        @include mixins.responsive-font(15px, 20px, 30px, 40px);
+      }
+      a {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+      }
+    }
+  }
+}

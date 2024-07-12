@@ -1,0 +1,34 @@
+@use "../Components/buttons";
+@use "sass:meta";
+@use "../Base/mixins";
+.hero {
+  position: relative;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .hero_info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+
+    h1 {
+      @include mixins.responsive-font(30px, 40px, 60px, 80px);
+      font-weight: 400;
+    }
+    h3 {
+      @include mixins.responsive-font(18px, 24px, 32px, 40px);
+      font-weight: 400;
+    }
+  }
+}
